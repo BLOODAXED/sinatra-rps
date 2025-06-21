@@ -1,0 +1,16 @@
+<div>
+
+  <h2>
+    We Played <%= @p_play %>
+  </h1>
+  <h2>
+    They played <%= @cpu_play %>
+  </h2>
+  <h2>
+    <% case @outcome 
+     when 0 %> We won!
+    <% when 1 %> We lost!
+    <% when 2 %> We tied!
+    <% end %>
+  </h3>
+</div>
